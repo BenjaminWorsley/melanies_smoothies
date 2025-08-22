@@ -1,3 +1,4 @@
-#requirement.txt
+requirement.txt
+python=3.11
 snowflake-snowpark-python
 streamlit
