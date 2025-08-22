@@ -12,7 +12,7 @@ st.write(
 
 
 
-
+from snowflake.snowpark.functions import col
 #st.write("You selected:", options)
 cnx = st.connection("snowflake")
 session = cnx.session()
