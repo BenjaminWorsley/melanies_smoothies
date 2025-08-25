@@ -10,11 +10,7 @@ st.write(
   """
 )
 
-
-
-
-#st.write("You selected:", options)
-cnx = st.connection("snowflake")
+cnx = st.connection
 session = cnx.session()
 
 
@@ -58,16 +54,3 @@ if ingredient_list:
     if time_to_insert:
         session.sql(my_insert_stmt).collect()
         st.success('Your Smoothie is ordered!', icon="✅")
-
-
-#my_dataframe[0]
-#st.write("You selected:", option, f":{option.lower()}:")
-#options = st.multiselect(
-#    "What are your favorite colors?",
-#    list(my_dataframe)
-#    default=["Yellow", "Red"],
-#)
-
-
-#if ingredients_list
-
